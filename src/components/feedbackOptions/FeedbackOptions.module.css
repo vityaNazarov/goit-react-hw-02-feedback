@@ -1,0 +1,10 @@
+.feedbackForm__buttons {
+  display: flex;
+  gap: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedbackForm__buttons:hover {
+  transform: scale(1.2);
+}
