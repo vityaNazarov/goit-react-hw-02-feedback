@@ -1,13 +1,3 @@
-// import Feedback from './feedback/Feedback';
-
-// export const App = () => {
-//   return (
-//     <div>
-//       <Feedback />
-//     </div>
-//   );
-// };
-
 import React from 'react';
 import { Component } from 'react';
 import FeedbackOptions from './feedbackOptions/FeedbackOptions';
@@ -20,8 +10,6 @@ export class App extends Component {
     good: 0,
     neutral: 0,
     bad: 0,
-    total: 0,
-    PositiveFeedback: 0,
   };
 
   stateNames = Object.keys(this.state);
