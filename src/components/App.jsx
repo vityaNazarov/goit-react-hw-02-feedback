@@ -43,8 +43,9 @@ export class App extends Component {
             onLeaveFeedback={this.onLeaveFeedback}
           />
         </Section>
-
-        {this.countTotalFeedback() !== 0 && (
+        {this.countTotalFeedback() === 0 ? (
+          <Notification title="There is no feedback" />
+        ) : (
           <Section title="Statistics:">
             <Statistics
               good={this.state.good}
@@ -54,10 +55,6 @@ export class App extends Component {
               positivePercentage={this.countPositiveFeedbackPercentage()}
             />
           </Section>
-        )}
-
-        {this.countTotalFeedback() === 0 && (
-          <Notification title="There is no feedback" />
         )}
       </>
     );
